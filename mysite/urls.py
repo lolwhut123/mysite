@@ -20,6 +20,5 @@ from gameplay import views as gameplayViews
 urlpatterns = [
     url(r'^$', gameplayViews.index, name='home'),
     url(r'^gameplay/', include('gameplay.urls')),
-    url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
 ]
